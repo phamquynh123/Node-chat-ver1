@@ -26,7 +26,7 @@ var express = require('express'),
 
     });
 
-    function updateNickNames(){
+    function updateNickNames(){ 
         io.sockets.emit('usernames', Object.keys(users));
     }
     socket.on('open-chatbox', function(data){
